@@ -43,9 +43,9 @@ window.addEventListener('scroll', blurHeader)
 
 /*=============== COMPTER ===============*/
 
-let number = 999; // Nombre final du compteur
+let number = 350; // Nombre final du compteur
 let compter = 0; // Initialisation du compteur
-let duration = 1; // Durée en seconde pendant laquel le compteur ira de 0 à 9999
+let duration = 1; // Durée en seconde pendant laquel le compteur ira de 0 à 350
 let delta = Math.ceil((duration * 1000) / number); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
 let node =  document.getElementById("choosus__number"); // On récupère notre noeud où sera rafraîchi la valeur du compteur
  
