@@ -57,3 +57,18 @@ function countdown() {
 }
  
 setTimeout(countdown, delta);
+
+
+/*=============== FAQ ===============*/
+// Sélectionne tous les éléments HTML avec la classe "faq-toggle" 
+const toggles = document.querySelectorAll(".faq-toggle")
+
+// Pour chaque élément "toggle" dans la liste de toggles
+toggles.forEach(toggle => {
+  // Ajoute un écouteur d'événements de clic à chaque "toggle"
+  toggle.addEventListener('click', () => {
+    // Lorsque l'élément est cliqué, il ajoute ou supprime la classe "active" à son parent
+    toggle.parentNode.classList.toggle("active")
+  })
+})
+
