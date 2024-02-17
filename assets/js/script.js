@@ -72,3 +72,40 @@ toggles.forEach(toggle => {
   })
 })
 
+/*=============== TESTIMONIAL ===============*/
+// Initialisation de l'index à 0
+let index = 0;
+
+// Appel de la fonction show avec l'index actuel
+show(index);
+
+// Définition de la fonction show qui prend un paramètre i (pour incrémenter ou décrémenter l'index)
+function show(i) {
+  // Mise à jour de l'index en fonction du paramètre
+  index += i;
+
+  // Récupération de tous les éléments avec la classe "client"
+  var testim = document.getElementsByClassName("client");
+
+  // Masquage de tous les éléments avec la classe "client"
+  for (i = 0; i < testim.length; i++) {
+    testim[i].style.display = "none";
+  }
+
+  // Vérification si l'index est supérieur à la longueur des éléments - 1
+  if (index > testim.length - 1) {
+    // Réinitialisation de l'index à 0 si on atteint la fin de la liste d'éléments
+    index = 0;
+  }
+
+  // Vérification si l'index est inférieur à 0
+  if (index < 0) {
+    // Réinitialisation de l'index à la fin de la liste d'éléments si on atteint le début
+    index = testim.length - 1;
+  }
+
+  // Affichage de l'élément actuel en utilisant l'index mis à jour
+  testim[index].style.display = "block";
+}
+
+

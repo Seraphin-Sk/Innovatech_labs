@@ -763,7 +763,7 @@ svg {
 /*=============== TEAM ===============*/
 .team__section{
   background-color: #e6e3e3;
-  padding: 4rem;
+  padding: 3rem;
 }
 
 .button__team{
@@ -849,3 +849,115 @@ svg {
   background-color: transparent;
   color: var(--body-color);
 }
+
+/*=============== TESTIMONIAL ===============*/
+.testimonial__section{
+  background-color: var(--title-color);
+  padding: 3rem;
+}
+
+.client{
+  display: none;
+  padding: 1rem 0;
+}
+
+.testi__container{
+  padding: 1rem 0;
+  color: var(--body-color);
+}
+
+.testi__container i{
+  font-size: 2rem;
+  color: var(--backgraund-color);
+}
+
+.testi__description{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testi__description img{
+  width: 3rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.testi__title{
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  color: var(--container-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.testi__prof{
+  font-weight: normal;
+  color: var(--body-color);
+}
+
+.btn__click{
+  padding: 0.3rem 0.4rem;
+  background-color: transparent;
+  border: 1px solid var(--backgraund-color);
+  border-radius: 50%;
+  transition: all 0.4s ease-out;
+}
+
+.btn__click i{
+  font-size: 1.7rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.btn__click:hover{
+  background-color: var(--backgraund-color);
+  color: var(--title-color);
+}
+
+/*=============== CONTACT ===============*/
+.contact__section{
+  background: url(../img/bg-hero.png) center center no-repeat;
+  background-size: cover;
+  background-color: var(--backgraund-color);
+  padding: 4rem 3rem;
+}
+
+.contact__description{
+  padding: 4rem 0;
+}
+
+.button__contact{
+  border: 1px solid var(--title-color);
+  padding: 0.2rem 1.5rem;
+  border-radius: 3rem;
+  color: var(--title-color);
+}
+
+.contact__subtitle{
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: var(--font-semi-bold);
+}
+
+input{
+  padding: 0.5rem 1rem;
+  width: 76%;
+  border-radius: 5rem;
+}
+
+.contact__description button{
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.contact__description button:hover{
+  background: transparent;
+  border: 1px solid var(--title-color);
+  color: var(--title-color);
+}
+
+
+
+
+
+
+
