@@ -760,6 +760,92 @@ svg {
 }
 
 
+/*=============== TEAM ===============*/
+.team__section{
+  background-color: #e6e3e3;
+  padding: 4rem;
+}
 
+.button__team{
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #fffcfc;
+  border-radius: 3rem;
+  background-color: transparent;
+  color: var(--backgraund-color);
+  font-weight: var(--font-medium);
+}
 
+.team__subtitle{
+  color: var(--container-color);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.6rem;
+}
 
+.team__paragraph{
+  padding: 1rem 0;
+  color: var(--body-color);
+}
+
+.savoir__btn{
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #fffcfc;
+  border-radius: 3rem;
+  background-color: var(--backgraund-color);
+  color: var(--title-color);
+}
+
+ .team__container {
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
+
+.team__card {
+  text-align: center;
+  background-color: var(--title-color);
+  padding: 3rem 1.25rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--title-color);
+  transition: background-color .5s;
+}
+
+.team__title {
+  color: var(--body-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 0;
+}
+
+.team__span{
+  color: var(--body-color);
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.team__card:hover {
+  border: 1px solid var(--backgraund-color);
+} 
+
+.team__img{
+  border-radius: 50%;
+}
+
+.team__social-link i{
+  font-size: var(--h3-font-size);
+  padding: 5px;
+  margin: 0.2rem;
+  border: 1px solid var(--backgraund-color);
+  border-radius: 50px;
+  background-color: var(--backgraund-color);
+  color: var(--title-color);
+  transition: all 0.4s ease-out;
+}
+
+.team__social-link i:hover{
+  background-color: transparent;
+  color: var(--body-color);
+}
