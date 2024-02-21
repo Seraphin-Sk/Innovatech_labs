@@ -108,4 +108,46 @@ function show(i) {
   testim[index].style.display = "block";
 }
 
+/*=============== EMAIL JS ===============*/
+
+// Récupération des éléments du DOM
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message');
+
+// Fonction pour envoyer l'e-mail
+const sendEmail = (e) => {
+    e.preventDefault(); // Empêche le formulaire de se comporter normalement (rechargement de la page)
+
+    // Envoi du formulaire à Email.js avec les identifiants nécessaires
+    // serviceID - template ID - #form - publickey
+    emailjs.sendForm('service_dfpu338', 'template_netqahv', '#contact-form', '3LRncYPyE6Pmuw93V')
+        .then(() => {
+            // Affiche le message de succès
+            contactMessage.textContent = 'Message envoyé avec succès ✅'
+
+            // Supprime le message après cinq secondes
+            setTimeout(() => {
+                 contactMessage.textContent = ''
+             }, 5000);
+
+            // Réinitialise les champs du formulaire
+              contactForm.reset();
+        }, () => {
+            // Affiche le message d'erreur en cas d'échec de l'envoi
+            contactMessage.textContent = 'Message non envoyé (erreur de service) ❌'
+        });
+};
+
+// Ajoute un écouteur d'événement au formulaire pour déclencher la fonction sendEmail lors de la soumission
+contactForm.addEventListener('submit', sendEmail);
+
+/*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+  const scrollUp = document.getElementById('scroll-up')
+  // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup
+  this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                  : scrollUp.classList.remove('show-scroll')
+}
+
+window.addEventListener('scroll', scrollUp)
 

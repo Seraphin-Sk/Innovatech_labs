@@ -27,7 +27,7 @@
            <div class="nav__menu" id="nav-menu">
               <ul class="nav__list">
                  <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">Acceuil</a>
+                    <a href="#home" class="nav__link">Acceuil</a>
                  </li>
 
                  <li class="nav__item">
@@ -39,11 +39,11 @@
                  </li>
 
                  <li class="nav__item">
-                    <a href="#services" class="nav__link">Pages</a>
+                    <a href="#pages" class="nav__link">Pages</a>
                  </li>
 
                  <li class="nav__item">
-                    <a href="#project" class="nav__link">Projets</a>
+                    <a href="#etude" class="nav__link">Etude</a>
                  </li>
 
                  <li class="nav__item">
@@ -216,7 +216,7 @@
       </section>
 
       <!--==================== CHOOSE US ====================-->
-      <section class="section__choosus" id="choosus">
+      <section class="section__choosus" id="pages">
          <div class="choosus__container">
             <a href="#" class="button__choosus">Pourquoi nous choisir</a>
 
@@ -251,7 +251,7 @@
       </section>
 
       <!--==================== CASE STUDY ====================-->
-      <section>
+      <section  id="etude">
         <div class="study__section" id="study">
             <div class="study__description"> 
                <a href="#" class="button__study">Etude de cas</a>
@@ -603,7 +603,7 @@
          </div> 
       </section>
       <!--==================== CONTACT ====================-->
-      <section class="contact__section" id="contact__section>
+      <section class="contact__section" id="contact">
          <div class="contact__container">
             <img src="assets/img/newsletter.png" alt="">
          </div>
@@ -615,18 +615,149 @@
                Abonnez-vous à la newsletter
             </h2>
 
-            <input type="email" name="email" id="email" placeholder="Entrer votre email">
-            <button type="submit">Envoyer</button>
+            <form action="" class="contact__form" id="contact-form">
+               <input type="email" name="user_email"  id="user_email" required placeholder="Entrer votre email">
+               <button type="submit" class="button contact__button">Envoyer</button>
 
-            <p class="contact__message" id="contact__message"></p>
+               <p class="contact__message" id="contact-message"></p>
+            </form>
          </div>
       </section>
 
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__title">
+               <h1 class="footer__logo">
+                  Innovatech.<span>Labs</span>
+               </h1> 
+
+               <p class="footer__description">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptas eum repudiandae quidem explicabo nulla!
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               </p>
+
+               <div class="footer__group">
+                  <h3 class="footer__title__adress">
+                     Entrer en contact
+                  </h3>
+
+                  <div class="footer__adress">
+                     <p><i class="ri-map-pin-fill"></i>  13 rue, Limete, Kishasa DRC</p>
+                     <p><i class="ri-phone-fill"></i>  +243  993 343 553</p>
+                     <p><i class="ri-mail-fill"></i>  Innovatech@gmail.com</p>
+                  </div>
+
+                  <div class="footer__icon">
+                     <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-fill"></i>
+                     </a>
+
+                     <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                     </a>
+
+                     <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-youtube-fill"></i>
+                     </a>
+
+                     <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                     </a>
+
+                     <a href="#" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="footer__link">
+                  <h3 class="link__title">
+                     Lien populaire
+                  </h3>
+
+                  <div class="group__link__footer">
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">A propos de nous</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Contactez-nous</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Politique de confidentialité</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Termes de conditions</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Carrière</a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="footer__link">
+                  <h3 class="link__title">
+                     Nos services
+                  </h3>
+
+                  <div class="group__link__footer">
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Automatisation robotique</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Apprentissage automatique</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Analyse prédictive</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Science des données</a>
+                     </p>
+   
+                     <p class="link__foot">
+                        <i class="ri-arrow-right-s-fill"></i>
+                        <a href="#about" class="link__simple">Technologie robotique</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer__copyright">
+               <p class="copyright__footer">
+                  &#169; <span>Innovatech.labs</span>, tous droits révervés.
+               </p>
+            </div>
+         </div>
+      </footer>
     </main>
 
 
-
-
+   <!--========== SCROLL UP ==========-->
+   <a href="#home" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a> 
+   
+   <!--=============== SCROLLREVEAL ===============-->
+   <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+   
+   <!--=============== EMAIL JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script src="assets/js/script.js"></script>
 </body>
