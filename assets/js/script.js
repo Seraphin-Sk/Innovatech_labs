@@ -151,3 +151,20 @@ const scrollUp = () =>{
 
 window.addEventListener('scroll', scrollUp)
 
+/*=============== SCROLL REVEAL ANIMATION ===============*/ 
+// Crée une nouvelle instance de ScrollReveal avec certaines options
+const sr = ScrollReveal({
+  origin: 'top', // L'animation commence en haut
+  distance: '60px', // L'élément se déplace de 60px pendant l'animation
+  duration: 2500, // Durée de l'animation en millisecondes (2,5 secondes)
+  delay: 400, // Délai avant le début de l'animation en millisecondes (0,4 secondes)
+  // reset: true // Réinitialise l'animation à chaque fois qu'elle devient visible
+})
+
+// Applique l'animation à tous les éléments avec la classe 'home__data'
+sr.reveal(`.home__data, .home__social, .contact__container, .footer__container`)
+sr.reveal(`.home__image` , {origin: 'bottom'})
+sr.reveal(`.about__data, .choosus__container`,  {origin: 'left'})
+sr.reveal(`.about__image, .contact__description`, {origin: 'right'})
+sr.reveal(`.services__card, .projects__card, .study__container, .team__container`, {interval: 100})
+
